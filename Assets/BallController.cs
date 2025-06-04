@@ -20,7 +20,7 @@ public class BallController : MonoBehaviour
     {
         if (other.CompareTag("Catcher"))
         {
-            //GameManager.Instance.AddScore(isGoodBall ? scoreValue : -Mathf.Abs(scoreValue));
+            GameManager.Instance.AddScore(isGoodBall ? scoreValue : -Mathf.Abs(scoreValue));
             Destroy(gameObject);
         }
         else if (other.CompareTag("Bottom"))
