@@ -36,7 +36,7 @@ public class BallSpawner : MonoBehaviour
         {
             return; // No prefabs available
         }
-
+        Debug.Log("Spawning: " + prefabToSpawn.name + " at " + spawnPoint.position);
         // Instantiate
         Instantiate(prefabToSpawn, spawnPoint.position, Quaternion.identity);
     }
